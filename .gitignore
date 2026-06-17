@@ -1,0 +1,52 @@
+# MPLAB X / XC8 / Assembly
+build/
+dist/
+debug/
+production/
+
+*.o
+*.d
+*.elf
+*.map
+*.lst
+*.sym
+*.cod
+*.cof
+*.hxl
+*.pre
+*.p1
+*.cmf
+
+nbproject/private/
+nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+
+*.log
+
+
+# KiCad
+*-backups/
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_prl
+*.kicad_prl.bak
+fp-info-cache
+
+*.tmp
+*.temp
+*.~*
+\#auto_saved_files\#/
+
+.history/
+**/.history/
+
+
+# Repositorios Git internos accidentales
+**/.git/
+
+
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+.DS_Store
