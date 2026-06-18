@@ -1,11 +1,11 @@
-# Dosímetro volumétrico automatizado con PIC16F887
+# Prototipo de bomba de infusión volumétrica automatizada con PIC16F887
 Asignatura: Electrónica Digital II - Universidad Nacional de Córdoba 
-Integrantes: Bagnera, Maria Emilia - Bauchwitz Lautaro - Faimberg, Mijal
-Nombre Apellido Profesor: Marcos Blasco
+Integrantes: Bagnera, Maria Emilia - Bauchwitz, Lautaro - Faimberg, Mijal
+Profesor: Marcos Blasco
 
 ## 1. Descripción general del proyecto
 
-El proyecto consiste en el desarrollo de un dosímetro volumétrico automatizado controlado por un microcontrolador PIC16F887. El sistema permite accionar un motor paso a paso encargado de desplazar el émbolo de una jeringa, con el objetivo de dispensar un volumen de manera controlada. La cantidad de pasos o dosis puede ser ingresada desde una computadora mediante comunicación serie UART, mientras que el sistema muestra información en dos displays de 7 segmentos multiplexados.
+El proyecto consiste en el desarrollo de una bomba de infusión automatizada controlado por un microcontrolador PIC16F887. El sistema permite accionar un motor paso a paso encargado de desplazar el émbolo de una jeringa, con el objetivo de dispensar un volumen de manera controlada. La cantidad de pasos o dosis puede ser ingresada desde una computadora mediante comunicación serie UART, mientras que el sistema muestra información en dos displays de 7 segmentos multiplexados.
 
 ---
 
@@ -79,6 +79,12 @@ El siguiente esquemático muestra la conexión general entre el PIC16F887 y los 
 
 ![Esquemático completo](hardware/esquematico.png)
 
+## Prototipo físico
+
+La siguiente imagen muestra el montaje físico del sistema desarrollado, incluyendo el microcontrolador, la etapa de potencia, los elementos de visualización y el mecanismo asociado al accionamiento de la jeringa.
+
+![Prototipo físico](docs/prototipo_final.jpeg)
+
 ---
 
 # 5. Descripción del circuito
@@ -127,7 +133,7 @@ El potenciómetro se conecta como divisor resistivo entre 5 V y GND. El terminal
 
 ## Herramientas utilizadas
 
-* MPLAB X IDE v6.30.
+* MPLAB X IDE v5.35.
 * Ensamblador para PIC.
 * Lenguaje Assembly.
 * Microcontrolador PIC16F887.
@@ -242,13 +248,6 @@ Se enviaron pulsos STEP al driver del motor paso a paso y se verificó el movimi
 Evidencia:
 
 ![Prueba motor](docs/prueba_motor.jpeg)
-Prueba del prototipo completo
-
-Se conectaron todos los módulos del sistema y se verificó el funcionamiento integrado. El sistema recibió datos por UART, mostró información en los displays, leyó el potenciómetro y accionó el motor paso a paso.
-
-Evidencia:
-
-![Prototipo completo](docs/prototipo_final.jpeg)
 
 ---
 

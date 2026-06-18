@@ -18,13 +18,11 @@ DISP    	EQU 0x75
 NIB_BAJO	EQU 0x76
 NIB_ALTO	EQU 0x77
 DOSIS   	EQU 0x78
-PASOS_H EQU 0X79
-contador147 equ 0x7A
-DECENAS EQU 0x7C
-UNIDADES EQU 0x7D
-contador10 EQU 0x7B
- 
- 
+PASOS_H     EQU 0X79
+contador147 EQU 0x7A
+DECENAS     EQU 0x7C
+UNIDADES    EQU 0x7D
+contador10  EQU 0x7B
  
 ORG 0x00
 GOTO INICIO
@@ -68,7 +66,6 @@ MOVLW .25
 MOVWF SPBRG
 BSF PIE1, RCIE
 
- 
 ;BANCO 3
 BSF STATUS, RP1
 MOVLW B'00000001'
@@ -135,10 +132,6 @@ CALL MOVER_PASOS
 CALL ACTUALIZAR_ADC
 GOTO FIN_PERIF
 
- ;====================================================
-; MOVER_PASOS
-; Mueve el motor PASOS_H:PASOS veces
-;====================================================
 
 MOVER_PASOS
     MOVLW   .147
@@ -216,7 +209,6 @@ GOTO	DELAY_ADC
 RETURN
   	 
 
-
 TIMER0
 MOVLW .237
 MOVWF TMR0
@@ -278,11 +270,6 @@ MOVWF STATUS
 SWAPF W_TEMP, F
 SWAPF W_TEMP, W
 RETFIE
-
-
-
-
-
 
 TABLA
    ADDWF   PCL, F
