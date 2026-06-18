@@ -153,10 +153,9 @@ El potenciómetro se conecta como divisor resistivo entre 5 V y GND. El terminal
 El sistema utiliza un cristal externo de 4 MHz. El Watchdog Timer se encuentra desactivado para evitar reinicios no deseados durante las pruebas. El pin MCLR se mantiene habilitado como reset externo. El módulo ADC se configura para leer el canal AN0. La comunicación UART se configura para recibir datos enviados desde una terminal serie en la computadora.
 
 ## Diagrama de flujo del firmware
-
 El siguiente diagrama representa el flujo general del firmware implementado en el PIC16F887. Se muestra la inicialización de periféricos, el lazo principal y el orden de atención de interrupciones utilizado en el sistema.
 
-![Diagrama de flujo del firmware](docs/diagrama_flujo.jpg)
+![Diagrama de flujo del firmware](docs/diagrama_flujo.jpeg)
 
 ---
 
